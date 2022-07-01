@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Gilmer";
+  src: url("/fonts/Gilmer/GilmerBold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gilmer";
+  src: url("/fonts/Gilmer/GilmerHeavy.otf");
+  font-weight: 800;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
