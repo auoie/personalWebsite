@@ -4,4 +4,11 @@ const nextConfig = {
   trailingSlash: true,
 };
 
-module.exports = nextConfig;
+const withImages = require("next-images");
+module.exports = withImages({
+  reactStrictMode: true,
+  trailingSlash: true,
+  images: {
+    disableStaticImages: true,
+  }
+});

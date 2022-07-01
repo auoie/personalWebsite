@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import Div100vh from "react-div-100vh";
@@ -11,8 +12,12 @@ const Home: NextPage = () => {
     setEmail(atob("bWFpbHRvOmRjaGFkcmFhQGdtYWlsLmNvbQ=="));
   }, []);
   return (
-    <Div100vh className="flex items-center justify-center">
-      <div className="max-w-lg select-none mx-4 space-y-2">
+    <Div100vh
+      className={clsx(
+        "flex items-center justify-center ease-in transition-opacity"
+      )}
+    >
+      <div className="max-w-md mx-4 space-y-2 selection:dark:bg-stone-700 selection:bg-stone-200">
         <div className="font-head font-bold text-2xl">
           Hi, I&apos;m Dalai Chadraa.
         </div>
