@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         "flex items-center justify-center ease-in transition-opacity"
       )}
     >
-      <div className="max-w-md mx-4 space-y-2 selection:dark:bg-stone-700 selection:bg-stone-200">
+      <div className="max-w-md mx-6 space-y-2 bg-white dark:bg-black selection:dark:bg-stone-800 selection:bg-stone-200 shadow-2xl p-6 rounded-xl dark:shadow-black dark:hover:shadow-stone-700 hover:shadow-stone-950 transition-all duration-1000">
         <div className="font-head font-bold text-2xl">
           Hi, I&apos;m Dalai Chadraa.
         </div>

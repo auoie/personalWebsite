@@ -21,6 +21,9 @@ module.exports = {
         zinc: {
           950: "#0e0e11",
         },
+        stone: {
+          950: "#120f0d"
+        }
       },
     },
   },
