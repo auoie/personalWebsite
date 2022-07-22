@@ -1,25 +1,3 @@
-@font-face {
-  font-family: "Gilmer";
-  src: url("/fonts/Gilmer/GilmerBold.otf");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Gilmer";
-  src: url("/fonts/Gilmer/GilmerHeavy.otf");
-  font-weight: 800;
-}
-
 @tailwind base;
 @tailwind components;
-.fadeIn {
-  animation: fadeIn 1s cubic-bezier(0.4, 0, 1, 1);
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @tailwind utilities;

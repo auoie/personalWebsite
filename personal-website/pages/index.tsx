@@ -5,6 +5,7 @@ import Div100vh from "react-div-100vh";
 import { ResponsiveLink } from "../components/ResponsiveLink";
 import { EmailIcon } from "../icons/Email";
 import { GithubIcon } from "../icons/Github";
+import { LinkedIn } from "../icons/LinkedIn";
 
 const Home: NextPage = () => {
   const [email, setEmail] = useState("");
@@ -14,34 +15,41 @@ const Home: NextPage = () => {
   return (
     <Div100vh
       className={clsx(
-        "flex items-center justify-center ease-in transition-opacity"
+        "flex items-center justify-center"
       )}
     >
-      <div className="max-w-md mx-6 space-y-2 bg-white dark:bg-black selection:dark:bg-stone-800 selection:bg-stone-200 shadow-2xl p-6 rounded-xl dark:shadow-black dark:hover:shadow-stone-700 hover:shadow-stone-950 transition-all duration-1000">
+      <div className="max-w-lg space-y-2 selection:dark:bg-zinc-800 selection:bg-zinc-200 p-6 rounded-xl">
         <div className="font-head font-bold text-2xl">
           Hi, I&apos;m Dalai Chadraa.
         </div>
-        <p>
+        {/* <p>
           I graduated from the University of Washington in 2021. I&apos;m
           looking for an internship or a job.
-        </p>
+        </p> */}
         <p>
-          I&apos;m interested in backend and frontend development. I like using
-          React for the frontend and Node.js for the backend. I like using
-          TypeScript. I enjoy solving puzzles.
+          I&apos;m a fan of statically typed languages like TypeScript and Go. I
+          like using React for building frontends and Node.js for scripting
+          tasks. At the moment, I&apos;m trying to learn more about backend
+          development. In particular, I&apos;ve been learning Terraform and AWS.
         </p>
-        <div className="inline-flex space-x-2">
+        <div className="inline-flex space-x-1">
           <ResponsiveLink
-            className="flex items-center px-1 py-0.5"
+            className="flex items-center h-8 w-8 justify-center"
             href="https://github.com/auoie"
           >
-            <GithubIcon width={20} height={20} className="mr-1" /> GitHub
+            <GithubIcon width={20} height={20} />
           </ResponsiveLink>
           <ResponsiveLink
-            className="flex items-center px-1 py-0.5"
+            className="flex items-center h-8 w-8 justify-center"
             href={email}
           >
-            <EmailIcon width={20} height={20} className="mr-1" /> Email
+            <EmailIcon width={20} height={20} />
+          </ResponsiveLink>
+          <ResponsiveLink
+            className="flex items-center h-8 w-8 justify-center"
+            href={"https://www.linkedin.com/in/dalai-chadraa/"}
+          >
+            <LinkedIn width={20} height={20} />
           </ResponsiveLink>
         </div>
       </div>
