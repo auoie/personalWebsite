@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import Div100vh from "react-div-100vh";
 import { ResponsiveLink } from "../components/ResponsiveLink";
+import { TorusKnotScene } from "../components/TorusKnotScene";
 import { EmailIcon } from "../icons/Email";
 import { GithubIcon } from "../icons/Github";
 import { LinkedIn } from "../icons/LinkedIn";
@@ -13,12 +14,8 @@ const Home: NextPage = () => {
     setEmail(atob("bWFpbHRvOmRjaGFkcmFhQGdtYWlsLmNvbQ=="));
   }, []);
   return (
-    <Div100vh
-      className={clsx(
-        "flex items-center justify-center"
-      )}
-    >
-      <div className="max-w-lg space-y-2 selection:dark:bg-zinc-800 selection:bg-zinc-200 p-6 rounded-xl">
+    <Div100vh className={clsx("flex items-center justify-center")}>
+      <div className="max-w-lg space-y-2 selection:dark:bg-zinc-800 selection:bg-zinc-200 p-6 rounded-xl mb-0">
         <div className="font-head font-bold text-2xl">
           Hi, I&apos;m Dalai Chadraa.
         </div>
@@ -32,6 +29,9 @@ const Home: NextPage = () => {
           tasks. At the moment, I&apos;m trying to learn more about backend
           development. In particular, I&apos;ve been learning Terraform and AWS.
         </p>
+        <div className="w-48 h-48 mx-auto">
+          <TorusKnotScene />
+        </div>
         <div className="inline-flex space-x-1">
           <ResponsiveLink
             className="flex items-center h-8 w-8 justify-center"

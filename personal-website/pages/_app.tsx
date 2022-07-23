@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href={favicon} type="image/x-icon" />
       </Head>
       <div className="absolute top-0 left-0 right-0 flex justify-end items-center m-2">
-        <ThemeSwitch className="w-[93.5156px]" />
+        <ThemeSwitch className="w-[93.5156px] z-50" />
       </div>
       <Component {...pageProps} />
     </ThemeProvider>

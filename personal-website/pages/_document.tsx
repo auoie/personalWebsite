@@ -25,7 +25,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="bg-zinc-50 dark:bg-zinc-950 text-zinc-950 dark:text-zinc-50">
+        <body className="bg-zinc-50 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50">
           <Main />
           <NextScript />
         </body>
