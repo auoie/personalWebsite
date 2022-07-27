@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           looking for an internship or a job.
         </p> */}
         <p>
-          I&apos;m a fan of statically typed languages like TypeScript and Go. I
+          I&apos;m a fan of statically-typed languages like TypeScript and Go. I
           like using React for building frontends and Node.js for scripting
           tasks. At the moment, I&apos;m trying to learn more about backend
           development. In particular, I&apos;ve been learning Terraform and AWS.
